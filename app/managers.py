@@ -44,3 +44,6 @@ class ActorManager:
             (pk,)
         )
         self._connection.commit()
+
+    def close(self):
+        self._connection.close()
